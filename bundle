@@ -2,8 +2,8 @@
 
 export JEKYLL_VERSION=3.8
 docker run --rm \
-  -p 4001:4000 \
+  -p 4000:4000 \
   --volume="$PWD/src:/srv/jekyll" \
   --volume="$PWD/src/vendor/bundle:/usr/local/bundle" \
   jekyll/jekyll:$JEKYLL_VERSION \
-  jekyll serve
+  bundle
